@@ -13,7 +13,7 @@ import {
   SelectLabel,
   SelectValue,
 } from "@/components/ui/select";
-import { ChangeEvent, useState } from "react";
+import { useState } from "react";
 
 const FormComponent = () => {
   const services = [
@@ -42,10 +42,12 @@ const FormComponent = () => {
   const [status, setStatus] = useState("");
   const [selectedService, setSelectedService] = useState("");
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
