@@ -140,8 +140,8 @@ const FormComponent = () => {
             <SelectContent>
               <SelectGroup>
                 <SelectLabel>Select a service</SelectLabel>
-                {services.map((service) => (
-                  <SelectItem value={service.service}>
+                {services.map((service, index) => (
+                  <SelectItem key={index} value={service.service}>
                     {service.service}
                   </SelectItem>
                 ))}

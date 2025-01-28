@@ -2,9 +2,6 @@ import DownloadBtn from "@/components/downloadBtn";
 import Photo from "@/components/photo";
 import Social from "@/components/social";
 import Stats from "@/components/stats";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (

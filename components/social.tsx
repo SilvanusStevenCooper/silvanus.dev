@@ -1,13 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaYoutube,
-  FaTwitter,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter, FaFacebook } from "react-icons/fa";
 
 interface SocialProps {
   containerStyle: string;

@@ -1,6 +1,6 @@
 "use client";
 
-import { Swiper, useSwiper } from "swiper/react";
+import { useSwiper } from "swiper/react";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";

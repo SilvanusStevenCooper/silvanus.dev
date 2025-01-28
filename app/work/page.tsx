@@ -14,7 +14,6 @@ import {
   TooltipContent,
 } from "@/components/ui/tooltip";
 import Link from "next/link";
-import Image from "next/image";
 import WorkSliderBtns from "@/components/work-slider-btns";
 
 const projects = [
