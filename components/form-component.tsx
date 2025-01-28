@@ -42,13 +42,10 @@ const FormComponent = () => {
   const [status, setStatus] = useState("");
   const [selectedService, setSelectedService] = useState("");
 
-  //@ts-ignore
-  // eslint-disable-next-line
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  //@ts-ignore // eslint-disable-next-line
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
