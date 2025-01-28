@@ -1,4 +1,3 @@
-import { NextApiRequest } from "next";
 import { NextResponse } from "next/server";
 import db from "@/lib/prismadb";
 
