@@ -10,7 +10,8 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between pt-4 xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h1 className="h2 xl:h1 mb-6">
-              Hello I'm <br />
+              {`Hello I'm`}
+              <br />
               <span className="text-accent">Silvanus Steven Cooper</span>
             </h1>
             <span className="text-xl">A Software Developer</span>

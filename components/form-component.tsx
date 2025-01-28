@@ -13,7 +13,7 @@ import {
   SelectLabel,
   SelectValue,
 } from "@/components/ui/select";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 const FormComponent = () => {
   const services = [
@@ -41,12 +41,13 @@ const FormComponent = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState("");
   const [selectedService, setSelectedService] = useState("");
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     setIsSubmitting(true);
     setStatus("");
 
@@ -118,7 +119,7 @@ const FormComponent = () => {
             required
           />
           <Input
-            type="text"
+            type="tel"
             name="phone"
             placeholder="Phone"
             value={formData.phone}
