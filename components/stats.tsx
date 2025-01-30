@@ -15,22 +15,24 @@ const stats = [
     num: 10,
     text: "Technologies mastered",
   },
-  {
-    num: 100,
-    text: "Code commits",
-  },
+  // {
+  //   num: 100,
+  //   text: "Code commits",
+  // },
 ];
+
+const duplicateStats = [...stats, ...stats];
 
 const Stats = () => {
   return (
-    <section className="pt-4 pb-12 pl-10 xl:p-0 w-full">
-      <div className="w-full items-center justify-center">
-        <div className="flex w-full gap-4 md:gap-10 animate-scroll xl:animate-none">
+    <section className="pt-4 pb-12 pl-10 xl:p-0 w-full overflow-hidden relative">
+      <div className="w-full flex items-center justify-center">
+        <div className="flex xl:gap-10 animate-scroll xl:animate-none">
           {stats.map((stat, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-1 gap-4 justify-center xl:justify-start"
+                className="flex flex-1 gap-4 justify-center xl:justify-start min-w-[200px] text-wrap"
               >
                 <div>
                   <CountUp
@@ -43,7 +45,9 @@ const Stats = () => {
                 </div>
                 <p
                   className={`${
-                    stat.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
+                    stat.text.length < 15
+                      ? "max-w-[80px] xl:max-w-[100px]"
+                      : "max-w-[100px] xl:max-w-[150px]"
                   } leading-snug text-white xl:pt-2`}
                 >
                   {stat.text}
