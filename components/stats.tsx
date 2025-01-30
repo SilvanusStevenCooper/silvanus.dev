@@ -4,6 +4,11 @@ import CountUp from "react-countup";
 
 const stats = [
   {
+    num: 100,
+    text: "Code commits",
+  },
+
+  {
     num: 2,
     text: "Years of experience",
   },
@@ -15,10 +20,6 @@ const stats = [
     num: 10,
     text: "Technologies mastered",
   },
-  // {
-  //   num: 100,
-  //   text: "Code commits",
-  // },
 ];
 
 // const duplicateStats = [...stats, ...stats];

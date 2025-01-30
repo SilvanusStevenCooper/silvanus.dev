@@ -1,4 +1,4 @@
-import db from "../../lib/prismadb";
+import db from "@/lib/prismadb";
 import Messages from "@/components/messages";
 import deleteMessage from "@/actions/delete/page";
 
