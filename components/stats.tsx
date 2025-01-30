@@ -1,11 +1,5 @@
 "use client";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-
 import CountUp from "react-countup";
 
 const stats = [
@@ -26,8 +20,6 @@ const stats = [
     text: "Code commits",
   },
 ];
-
-const duplicateStats = [...stats, ...stats];
 
 const Stats = () => {
   return (

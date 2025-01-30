@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import Nav from "./nav";
 import { Button } from "./ui/button";
-import MobileNav from "./mobile-nav";
 
 const Header = () => {
   return (
