@@ -21,7 +21,7 @@ const stats = [
   // },
 ];
 
-const duplicateStats = [...stats, ...stats];
+// const duplicateStats = [...stats, ...stats];
 
 const Stats = () => {
   return (
