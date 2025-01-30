@@ -1,5 +1,11 @@
 "use client";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+
 import CountUp from "react-countup";
 
 const stats = [
@@ -7,38 +13,34 @@ const stats = [
     num: 2,
     text: "Years of experience",
   },
-
   {
     num: 6,
     text: "Projects completed",
   },
-
   {
     num: 10,
     text: "Technologies mastered",
   },
-
   {
     num: 100,
-    text: "Code commit",
+    text: "Code commits",
   },
 ];
 
+const duplicateStats = [...stats, ...stats];
+
 const Stats = () => {
   return (
-    <section className="pt-4 pb-12 xl:pt-0 xl:pb-6">
-      <div className="mx-auto w-full">
-        <div
-          className="grid grid-cols-2 gap-6 ml-4 sm:ml-6 xl:ml-0 sm:flex sm:flex-wrap sm:gap-6 sm:max-w-[80vw] 
-        items-center xl:items-stretch xl:flex xl:flex-wrap xl:gap-6 mx-auto xl:max-w-none"
-        >
+    <section className="pt-4 pb-12 pl-10 xl:p-0 w-full">
+      <div className="w-full items-center justify-center">
+        <div className="flex w-full gap-4 md:gap-10 animate-scroll xl:animate-none">
           {stats.map((stat, index) => {
             return (
               <div
                 key={index}
                 className="flex flex-1 gap-4 justify-center xl:justify-start"
               >
-                <div className="">
+                <div>
                   <CountUp
                     end={stat.num}
                     duration={5}

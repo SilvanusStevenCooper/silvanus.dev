@@ -81,12 +81,12 @@ const FormComponent = () => {
     <div className="w-auto xl:h-[55%] order-2 xl:order-none">
       <form
         onSubmit={handleSubmit}
-        className="flex h-full xl:h-auto flex-col gap-6 py-10 px-4 xl:p-10 bg-[#27272c] rounded-t-xl xl:rounded-xl"
+        className="flex h-full xl:h-auto flex-col gap-6 py-10 px-4 xl:p-10 bg-[#27272c] rounded-xl xl:rounded-xl"
       >
         <h3 className="text-3xl text-accent text-center">
           Want to work with me?
         </h3>
-        <p className="text-center">
+        <p className="text-left xl:text-center">
           I will definitely love to work with you too. Weither you want us to
           work on a project together, or you just want consultation service to
           clarify something you have a doubt about, or better still you want me

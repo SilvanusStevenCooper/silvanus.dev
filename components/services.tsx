@@ -3,6 +3,7 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Heading from "./heading";
 
 const services = [
   {
@@ -31,7 +32,7 @@ const services = [
 
   {
     num: "04",
-    title: "Mobile App Development (coming soon!!!)",
+    title: "Mobile App Development",
     description: `A fully functional cross-platform (Android or IOS) mobile app of any size or 
     type that supports interactivity, uploading of assets, database, a frontend, a backend and more.`,
     href: "",
@@ -40,8 +41,12 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <section className="min-h-[80vh] w-full flex flex-col justify-center pt-24 pb-12 xl:pb-10 xl:pt-32">
-      <div className="container mx-auto">
+    <section
+      id="services"
+      className="min-h-[80vh] w-full flex flex-col justify-center pb-12 xl:pb-10 border-2 border-white rounded-lg shadow-md shadow-white/50 mt-10 px-4"
+    >
+      <Heading title="Services" />
+      <div className=" mx-auto pt-10">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -59,7 +64,7 @@ const ServicesPage = () => {
                 {/* p */}
                 <div className="flex w-auto xl:w-full justify-between items-center">
                   <span
-                    className="text-5xl font-extrabold xl:text-outline xl:text-transparent text-accent
+                    className="text-3xl font-extrabold xl:text-outline xl:text-transparent text-accent
                   xl:group-hover:text-outline-hover transition-all duration-500"
                   >
                     {service.num}

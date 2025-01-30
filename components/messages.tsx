@@ -10,7 +10,7 @@ interface MessagesProps {
 
 const Messages = ({ messages, deleteMessage }: MessagesProps) => {
   return (
-    <div className="px-20 pt-36 min-h-screen ">
+    <div className=" p-4 xl:px-20 pt-10 xl:pt-36 min-h-screen ">
       <h1 className="text-3xl font-bold text-center mb-8 text-white/70">
         Messages
       </h1>

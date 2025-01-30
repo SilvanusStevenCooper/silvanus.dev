@@ -1,13 +1,20 @@
 import DownloadBtn from "@/components/downloadBtn";
 import Photo from "@/components/photo";
+import Services from "@/components/services";
 import Social from "@/components/social";
 import Stats from "@/components/stats";
+import Resume from "@/components/resume";
+import Works from "@/components/works";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
     <section className="h-full pt-24 xl:pb-10">
-      <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between pt-4 xl:pt-8 xl:pb-24">
+      <div className="container mx-auto h-full relative">
+        <div
+          id="home"
+          className="flex flex-col xl:flex-row items-center justify-between pt-4 xl:pt-8 xl:pb-24"
+        >
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h1 className="h2 xl:h1 mb-6">
               {`Hello I'm`}
@@ -40,9 +47,20 @@ export default function Home() {
         </div>
 
         {/* stats */}
-        <div className="w-full">
-          <Stats />
-        </div>
+
+        <Stats />
+
+        {/* services */}
+        <Services />
+
+        {/* resume */}
+        <Resume />
+        <hr className="" />
+        {/* works */}
+        <Works />
+        <hr />
+        {/* contact */}
+        <Contact />
       </div>
     </section>
   );
